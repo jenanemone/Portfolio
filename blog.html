@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/29e61423df.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="code-solid.svg">
+    <link rel="apple-touch-icon" href="code-solid.svg">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;1,100&family=Press+Start+2P&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Share+Tech+Mono&family=Syne+Mono&family=VT323&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>About Jennie Allen</title>
+</head>
+
+<body>
+    <header>
+        <div class="mobileIcon"><a href="index.html"><i class="fa-solid fa-code"></i></a></div>
+        <div class="mobileMenu">
+            <ul class="mobileMenu">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="portfolio.html"><i class="fa-solid fa-folder"></i></li>
+                <li><a href="games.html"><i class="fa-solid fa-gamepad"></i></a></li>
+                <li><a href="about.html"><i class="fa-solid fa-user"></i></a></li>
+                <!-- <li><a href="blog.html"><i class="fa-solid fa-blog"></i></a></li> -->
+                <!-- <li><a href="#"><i class="fa-solid fa-file"></i></a></li> -->
+                <li><a href="#index.html#contactForm" class="contact"><i class="fa-solid fa-paper-plane"></i></a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="games.html">GAMES</a></li>
+                <!-- <li><a href="blog.html">BLOG</a></li> -->
+                <!-- <li><a href="#">CV</a></li> -->
+                <li class="contact"><a href="index.html#contactForm" class="contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero subPageHero">
+        <h1 class="topH1 typing-effect">Jennie Allen </h1>
+        <h2 class="subpageTopH2">Blog</h2>
+    </section>
+    <section class="blogPost">
+        <h1>Variables and Functions: Yes, You Can Learn to Program!</h1>
+        <p>How do you go from using the computer to programming? Well, step one is realizing that anyone can do it! </p>
+
+<p>You say you can’t? Well then, SLAP YOURSELF! That is a flat-out lie. You managed to get here, so clearly, you know how to boss a computer around. That’s all programming is: being the boss of the computer. Being specific is how you do it. </p>
+
+<p>Okay, so you’re thinking, that’s not very specific! Well, let’s do the 10,000-foot view first.</p>
+
+<p>What is something you do all the time? Or do you have a skill? If you had to walk a friend (let’s call them Mandy) through sewing a shirt, what would you say? Take a moment and write it down. I’m waiting...</p>
+
+<p>You’re done? Good! Now read it back to someone who has never, ever done that thing before. I’ll bet you left something out. Let’s think this through, and I’ll do some pseudo-code (ahem, fake, English-y instructions to tell you what to code) for the example of sewing a shirt.</p>
+
+~~HOW TO SEW ONE SHIRT~~
+
+HOW TO TELL MANDY HOW TO SEW A SHIRT
+
+First, let’s determine what we need:
+
+- Fabric
+- Needle
+- Thread
+- Buttons
+- Pattern
+- Measurements
+
+<p>So we have things that we’ll do stuff to, our list of inputs, right? And we will have something we will end up with: a finished shirt, that uses those things in some way. So here comes the fun! Let’s “sew” a “shirt”!</p>
+
+<p>To tell the computer what we are referring to, we have to use computer speak. We need to declare a variable. Let me say that one more time, we are telling the computer, hey, we want to talk about something. I do declare my variable as</p>
+
+```jsx
+let shirt;
+```
+
+<p>Okay, that looks scary. We told the computer, I want to tell you that this is a variable:</p>
+
+```jsx
+let
+```
+
+<p>Then we said, here’s the name I’ll use to talk to you about this thingy:</p>
+
+```jsx
+    shirt
+```
+
+<p>And then, just to be clear that we finished talking to the computer about the shirt for the moment....</p>
+
+```jsx
+         ;
+```
+
+<p>The semicolon is like taking a breath after telling a story. Now, the computer knows you’re done talking about that thing for now. It’s sorta like the end of the paragragh.</p>
+
+<p>OMG! WHAT DID YOU DO? You just declared a variable! You told the computer that you want to give it a talking-to about a thing called shirt. Take a deep breath. Go for a walk. When you come back, look at that list of needs and decide if we need any other variables.</p>
+
+<p>Note: this above code will actually work. Not everything will for real.</p>
+
+MORE VARIABLES?! 
+
+<p>YES!!! Let’s turn our list into a bunch of variables:</p>
+
+- Fabric
+
+```jsx
+let fabric;
+```
+
+- Needle
+
+```jsx
+let needle;
+```
+
+- Thread
+
+```jsx
+let thread;
+```
+
+- Buttons
+
+```jsx
+let buttons;
+```
+
+- Pattern
+
+```jsx
+let pattern;
+```
+
+- Measurements
+
+```jsx
+let measurements;
+```
+
+<p>And voila! You have a bunch more things to talk to the computer about. Feel like it’s sinking in yet? C’mon, you know it’s making at least a little bit of sense. We have a list of things that we’d need to tell our friend Mandy about in order to walk them through making a shirt. Because we’re not actually making a shirt, we’re really talking about programming, we’re just going to treat this list as stuff that never runs out. </p> 
+
+<p>Remember how I said that this wasn’t going to be a real code-y explanation, right? Well, in order to get comfy with the code-y things, we’ll keep going with our lookalikes. It’s about to get real, y’all. Function time!</p>
+
+<p>Your friend (aka, the computer) has obtained all of the things on the list. They don’t know what to do with any of it. You have to tell them what to do. That is what a function is - instructions on doing stuff. Just to illustrate what one is used for, let’s just say we stick all the things on the requirements list together.</p>
+
+<p>So let’s create a function:</p>
+
+```jsx
+function makeShirt(fabric,needle,thread,buttons,patterns,measurements) {
+  shirt = [fabric,needle,thread,buttons,patterns,measurements];
+  return shirt;
+}
+```
+
+<p>Whoa, Nelly! What does it all mean?</p>
+
+```jsx
+function
+```
+
+<p>This word is special. It tells your friend the computer, here’s some instructions. Literally, that’s all it is. It’s the what-to-do part of the recipe.</p>
+
+```jsx
+         makeShirt
+```
+
+<p>The name of the function. Very important! I mean, you wouldn’t want Mandy to take all that nice fabric and buttons and thread and whatnot and try to fix a car with them, right?</p>
+
+```jsx
+                  (                                                    ) 
+```
+
+That’s a parenthesis. A pair of parentheses are required to declare the function. Just go with me on this one, okay?
+
+```jsx
+                   fabric,needle,thread,buttons,patterns,measurements
+```
+
+These guys are called parameters (for now, when declaring the function). You’re just saying, hey, in order to actually do this makeShirt action, you’re absolutely gonna need the things inside the parentheses.
+
+```jsx
+                                                                           {
+
+}
+```
+
+In the spirit of trust, believe me when I say these { } are also required. The opening curly brace/curly bracket { is literally just saying, instructions start after this curly thingy. The closing one says, hey, I’ve finished my instructions! That’s a wrap!
+
+Now, let’s look inside the function and see what’s going on.
+
+```jsx
+shirt
+```
+
+Hey, that’s our variable from before! What’s in doing in there? It’s there because we want to finally decide what a shirt thing is going to be. To say, this is this, we use the assignment operator
+
+```jsx
+      =
+```
+
+In this instance, the two parallel lines stacked on top of one another don’t mean “is equal to” or “is the same as”. They technically mean, “this means something new, which I will tell you now.” 
+
+Go get a drink. You’ve learned so much!
+
+```jsx
+	        [                          ]
+```
+
+Now that thing that we are following with, that’s called an array, which is literally just a list of stuff. We identify this because, you know, brackets. These guys: [ ] For now, just know that an array is just a list of stuff. In this case, inside this function, anytime we bring up shirt, the computer knows we mean the array containing: 
+
+```jsx
+                    fabric,needle,thread,buttons,patterns,measurements
+```
+
+Now, won’t that be easier? Telling our friend, computer, shirt instead of [fabric,needle,thread,buttons,patterns,measurements]? Phew! I need to sit down after saying that one. shirt is definitely shorter and easier to talk about. 
+
+One last thing, we want something to show for computer’s hard work! If we don’t have computer give us back the shirt, we basically just gave away all [fabric,needle,thread,buttons,patterns,measurements] for nothing! To get something back, we say
+
+```jsx
+  return
+```
+
+And, because we have to explain every little detail, we have to say what we want back,
+
+```jsx
+         shirt
+```
+
+Um, guys? I just typed all that stuff into my console, and nothing happened! (Or a bunch of error messages triggered.)
+
+Not to worry! You didn’t call that function yet, and there wasn’t good stuff inside shirt. (More on this below.) All you did was write down a recipe when you declared that function.
+
+There’s another step to doing the thing - telling the computer to do the thing. Seems so obvious, but computer starts with a clean slate about sewing. 
+
+```jsx
+let myShirt = makeShirt(fabric,needle,thread,buttons,pattern,measurements);
+```
+
+Wow! We did it! We did the thing! The proof is in the pudding. To confirm that we legit did it, we would go to your console, where you can run more instructions and see what’s going on with the code. If we had done some stuff to make this real code (more on this later) we would type in
+
+```jsx
+console.log(myShirt);
+```
+
+This command would print out the contents of whatever you put inside the parentheses over to the console in developer tools in your browser. Because of not giving our stuff any content, this won’t currently work. 
+
+Come back for more when you’re ready to make a better shirt!
+
+ANOTHER SHIRT
+
+You saved your files in VSCode or a text editor, right? Now let’s make some more magic by editing it. I don’t want any old shirt, I want you to make me a specific kind of shirt, and I need these exact things:
+
+- Silky Fabric
+- Thin Needle
+- Red Thread
+- Round Buttons
+- Blouse Pattern
+- Jennie’s Measurements
+
+Can you guess how I take in these more specific things and end up using this call to the function?
+
+```jsx
+let jenniesShirt = makeShirt(silkyFabric,thinNeedle,redThread,roundButtons,blousePattern,jenniesMeasurements);
+```
+
+How now, brown cow! That’s not the stuff you told me you were gonna put in the shirt when we wrote the instructions? How could you do this to me? 
+
+It’s gonna be okay. I want a specific kind of shirt, right? So I declared
+
+```jsx
+let silkyFabric = "silky fabric";
+let thinNeedle = "thin needle";
+let redThread = "red thread";
+let roundButtons = "round buttons";
+let blousePattern = "blouse pattern";
+let jenniesMeasurements = "Jennie's measurements";
+```
+
+Note that this time I added an 
+
+```jsx
+=
+```
+
+assignment operator. Each of my variables will now mean whatever came after that = operator. The stuff inside the quotations are of the primitive data type, string. String just means “wordy character thing that can be however long we want, even War and Peace long, as long as we don’t break the quotations marks that delimit it.” This way we can actually run the code! In fact, let’s do that now, before we even do any function stuff.
+
+Remember that I set silkyFabric to a special string. If I want, I can just do this in the console and get the computer to spit back out the second line:
+
+```jsx
+>console.log(silkyFabric);
+>silky fabric
+```
+
+How did it know that silkyFabric meant the phrase “silky fabric”? The magic of assignment! The computer will pretty much only forget what you tell it to. Or what you accidentally erase. Not like your friend Mandy, who never remembers your birthday. (Apologies to the Mandys who don’t forget birthdays.)
+
+Back to the call: we called the function with those variables as arguments (silkyFabric, for example). We did what? No, seriously, we called it. The function has a name, remember? We could have named it amazingTailorDogWhoMakesShirt, but we just named it the lame-o makeShirt. 
+
+Let’s go over the main two things one more time. The name of the function is makeShirt. We can talk to the computer all day about makeShirt. Every time we say that magic phrase, the computer says, yep, I got this. I know what you are referencing. You mean this block:
+
+```jsx
+function makeShirt(fabric,needle,thread,buttons,patterns,measurements) {
+  shirt = [fabric,needle,thread,buttons,patterns,measurements];
+  return shirt;
+}
+```
+
+Feeling better about function and variable now? Let’s go deeper.
+
+FOR ARGUMENT’S SAKE, MIND YOUR OWN PARAMETERS
+
+Ever go to a debate? Participate in one? The moderator gives you a topic. Like maybe...
+
+PRO speaker: Jennie’s dog is the best dog 
+
+CON speaker: Jennie’s dog is the worst dog
+
+So, the topic is “Jennie’s dog’s quality”.  If we were doing a function, the parameter would be the “the topic at hand”. We can just call that topic. More parameters are added for the two sides we know to expect when it goes down.
+
+```jsx
+
+function argueAboutJenniesDog(topic, pro, con) {
+	//insert argument and obviously return the PRO side
+}
+```
+
+```jsx
+let importantTopic = "Jennie's dog's quality";
+let proSide = "Jennie's dog is the best ever";
+let conSide = "Jennie's dog barked and me once, and so I think it's awful";
+```
+
+With choosing an actual topic, “Jennie’s dog’s quality”, for our debate, when we do the thing live in front of a studio audience, it has more meaning, right? So now when we do the calling we have an actual, real-life argument at hand.
+
+```jsx
+let debateResult = argueAboutJenniesDog(importantTopic);
+```
+
+Arguments are what you actually use when calling your function. 
+
+Um, what happened to calling those things parameters? Make up your mind already 🤬
+
+To explain the difference, let’s debate again!
+
+```jsx
+let anotherDebateTopic = "Is Marco or Polo the cuter dog?";
+let marcoSide = "Marco is so much cuter because he is red.";
+let poloSide = "Polo is cuter because of his ears and patches.";
+```
+
+Parameters are just for the declaration. Meaning, when we define the function. Every time we reuse the debate function to talk about different issues, we use different arguments!
+
+```jsx
+let secondDebateResult = argueAboutJenniesDog(anotherDebateTopic);
+```
+
+In the above example, your esteemed debate moderator chose a different topic to argue about. Notice that we’re still only talking dogs, but we can argue all different things about my dogs. The same is going to be true for our makeShirt function.
+
+Before we get concrete, let’s review what we just learned. Basically, parameters are guidelines for what you’ll need, but arguments are the actual thing you’re using. You can argue about anything, right? But sometimes you have to do it in the right place, at the right time, in the right way. Functions are also picky about their arguments. Arguments happen in the heat of the moment, but parameters are the framework for our fight. 
+
+CODE TIME
+
+Go ahead, type up or copy over this makeShirt stuff. See what happens when you 
+
+```jsx
+console.log(jenniesShirt);
+```
+
+And let’s add some stuff to make myShirt real enough to print out:
+
+```jsx
+fabric = "red cotton blend";
+needle = "a needle";
+thread = "red cotton thread";
+buttons = "tortoiseshell round buttons";
+pattern = "Oxford shirt pattern";
+measurements = "Mandy's measurements";
+```
+
+What happened to our special word?
+
+```jsx
+let
+```
+
+If you already typed and saved 
+
+```jsx
+let fabric;
+```
+
+etc, then you don’t need to use the magic `let` word again. In fact, it will give you an error! 
+
+So now we have set our original list of requirements to their own, individual strings. Which means if we want to call our function for realz....
+
+```jsx
+myShirt = makeShirt(fabric,needle,thread,buttons,pattern,measurements);
+```
+
+Before we try to print anything out to see if we did it right, think about what is going to happen when we call the function. How will these items appear? Remember that the function literally just creates a shirt item that holds the list of stuff, the array having the name of shirt, while inside the function itself:
+
+```jsx
+let shirt = [fabric,needle,thread,buttons,pattern,measurements];
+```
+
+Guess what? You now have 2 shirts!
+
+```jsx
+myShirt
+jennieShirt
+```
+
+These two variables now have separate meanings. Every time the computer talks about myShirt or jenniesShirt, you know EXACTLY what it means. The computer knows exactly what these words mean. (Mandy might still be having an issue, though.) Each of these variables stands for a different array (a list!) of stuff we stuffed inside that variable by running our function. 
+
+Does yours look like this?
+
+```jsx
+>console.log(myShirt);
+>(6) ['red cotton blend','a needle','red cotton thread','tortoiseshell round buttons','Oxford shirt pattern','Mandys measurements']
+```
+
+You got back more than you expected?
+
+```jsx
+>(6)
+```
+
+The console is telling you the quantity of items within your array. Remember, that’s what we were getting back from our return statement.
+
+But why did it give us the values?
+
+```jsx
+     ['red cotton blend','a needle','red cotton thread','tortoiseshell round buttons','Oxford shirt pattern','Mandys measurements']
+```
+
+Remember that when we passed in our arguments, even though the arguments themselves were variables, they themselves actually had values saved away. JavaScript took all of those pieces and did the work to evaluate each bit.
+
+Just like the computer gave you back a list including the strings we paid
+
+Being able to reuse an action to do something repeatedly the exact same way is the basis of functions. Being able to talk about stuff means we need specific names, and that’s why we use variables. If it’s still clear as mud, then an oversimplification of the thing goes like this:
+
+A variable is to a noun what a function is to a verb
+
+It gets a lot more complex, so the analogy holds water like a sieve holds a river. But hopefully my little explanation gets you two steps closer to understanding!
+    </section>
+    <footer>
+        <span>&#169 Jennifer Allen 2022</span>
+        <span>
+            <ul>
+                <li><a href="https://twitter.com/jenanemone"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://linkedin.com/in/jennifer-allen-jenanemone/"><i
+                            class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://github.com/jenanemone/"><i class="fa-brands fa-github-alt"></i></a></li>
+                <li><a href="https://reddit.com/user/jenanemone"><i class="fa-brands fa-reddit-alien"></i></a></li>
+            </ul>
+        </span>
+    </footer>
+</body>
+
+</html>

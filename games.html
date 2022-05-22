@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/29e61423df.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="code-solid.svg">
+    <link rel="apple-touch-icon" href="code-solid.svg">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;1,100&family=Press+Start+2P&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Share+Tech+Mono&family=Syne+Mono&family=VT323&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Games by Jennie Allen</title>
+</head>
+
+<body>
+    <header>
+        <div class="mobileIcon"><a href="index.html"><i class="fa-solid fa-code"></i></a></div>
+        <div class="mobileMenu">
+            <ul class="mobileMenu">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="portfolio.html"><i class="fa-solid fa-folder"></i></li>
+                <li><a href="games.html"><i class="fa-solid fa-gamepad"></i></a></li>
+                <li><a href="about.html"><i class="fa-solid fa-user"></i></a></li>
+                <!-- <li><a href="blog.html"><i class="fa-solid fa-blog"></i></a></li> -->
+                <!-- <li><a href="#"><i class="fa-solid fa-file"></i></a></li> -->
+                <li><a href="#index.html#contactForm" class="contact"><i class="fa-solid fa-paper-plane"></i></a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="games.html">GAMES</a></li>
+                <!-- <li><a href="blog.html">BLOG</a></li> -->
+                <!-- <li><a href="#">CV</a></li> -->
+                <li class="contact"><a href="index.html#contactForm" class="contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero subPageHero">
+        <h1 class="topH1 typing-effect">Jennie Allen </h1>
+        <h2 class="subpageTopH2">Portfolio: a Few Games </h2>
+    </section>
+    <!-- <section class="portfolioExpandedSites gameTabs"> -->
+    <section class="tryToFixFooter">
+        <!-- <section class="tabContainer"> -->
+        <div class="tab">
+            <button class="tabLinks" onclick="openGame('GamesHome')">Games Home</button>
+            <button class="tabLinks" onclick="openGame('AddItUp')">Add it Up</button>
+            <button class="tabLinks" onclick="openGame('MultiplicationTables')">Multiplication Table
+                Generator</button>
+            <button class="tabLinks" onclick="openGame('AngryParent')">Angry Parent Simulator</button>
+            <button class="tabLinks" onclick="openGame('YesOrNo')">Yes or No Game</button>
+        </div>
+        <section class="gameCourt">
+            <div class="playGame" id="GamesHome">
+                <p class="subPageP">Step right up! Try your hand at any one of these small games.</p>
+                <p class="subPageP">I typically use JavaScript, HTML, CSS, React, Express, Node, MongoDB, Python,
+                    and mySQL, to name a few of my favorite technologies. I've used Wordpress, Shopify, and other common
+                    platforms. You're in good hands!</p>
+                <p class="subPageP">I can build you what you want. These are live games for which I wrote the code. </p>
+                <p class="subPageP darkContactMe"><a href="index.html#contact" class="subPageContactMe">CONTACT ME</a>
+                </p>
+            </div>
+            <div class="playGame hidden" id="AddItUp">
+                <iframe src="https://additup-by-jennie-allen.netlify.app" frameborder="0" class="bigIframe"></iframe>
+            </div>
+            <div class="playGame hidden" id="MultiplicationTables">
+                <iframe src="https://multiplication-tables-by-jennie-allen.netlify.app" frameborder="0"
+                    class="bigIframe"></iframe>
+            </div>
+            <div class="playGame hidden" id="AngryParent">
+                <iframe src="https://angry-parent-simulator-by-jennie-allen.netlify.app/" class="bigIframe"></iframe>
+            </div>
+            <div class="playGame hidden" id="YesOrNo">
+                <section class="linkToYesNoGame smolGame">
+                    <p class="subPageP linkToYes"><a href="https://yes-or-no-by-jennie-allen.netlify.app">And if you're
+                            feeling adventurous, play
+                            the
+                            yes
+                            and no game by clicking here.</a></p>
+                </section>
+            </div>
+
+
+        </section>
+
+        <footer class="subPageFooter">
+            <span>&#169 Jennifer Allen 2022</span>
+            <span>
+                <ul>
+                    <li><a href="https://twitter.com/jenanemone"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://linkedin.com/in/jennifer-allen-jenanemone/"><i
+                                class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="https://github.com/jenanemone/"><i class="fa-brands fa-github-alt"></i></a></li>
+                    <li><a href="https://reddit.com/user/jenanemone"><i class="fa-brands fa-reddit-alien"></i></a></li>
+                </ul>
+            </span>
+        </footer>
+        <!-- </section> -->
+        <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
