@@ -1,0 +1,67 @@
+/*********************************
+**********CSS by Jennie***********
+**********DRAGONS AHEAD***********
+*******YE'VE BEEN WARNED!********/
+
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+    font-size: inherit;
+    color: rgb(32,40,55);
+    height:100%;
+}
+body {
+    height: 100%;
+}
+body * {
+    line-height: 2rem;
+    font-family: 'Exo',Verdana, Geneva, Tahoma, sans-serif;
+    outline:rgb(148, 149, 151) solid 2px;
+    background-color: #244484;
+}
+nav {
+    width: 100%;
+    height: auto;
+    padding: 1% 0;
+    display: flex;
+    justify-content: space-between;
+}
+header {
+    height: auto;
+}
+.topLinks {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.topLinks * {
+    color: magenta;
+}
+.fa-solid {
+    color: magenta;
+    font-size: x-large;
+}
+.menuIcon {
+    display: flex;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+}
+.hero {
+    height: 20rem;
+}
+main {
+    height: 40rem;
+}
+footer {
+    width: 100%;
+    height: auto;
+}
