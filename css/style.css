@@ -19,6 +19,7 @@ html {
 }
 body {
     height: 100%;
+    color: magenta;
 }
 body * {
     line-height: 2rem;
@@ -43,10 +44,10 @@ header {
     align-items: center;
 }
 .topLinks * {
-    color: magenta;
+    
 }
 .fa-solid {
-    color: magenta;
+    
     font-size: x-large;
 }
 .menuIcon {
@@ -56,10 +57,34 @@ header {
     align-items: center;
 }
 .hero {
-    height: 20rem;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.intro h2 {
+    width: 60%; 
+    text-align: center;
+}
+.intro {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.intro h2 {
+    word-wrap: normal;
+}
+.headshot {
+    
+} 
+.headshot > img {
+    height: 200px;
 }
 main {
     height: 40rem;
+}
+.about {
+    min-height: 100px;
 }
 footer {
     width: 100%;
