@@ -23,10 +23,12 @@ body {
 }
 h1 {
     font-size: 2.2rem;
+    text-align: center;
 }
 h2 {
     font-size: 1.6rem;
     padding: 1% 0;
+    text-align: center;
 }
 h3 {
     font-size: 1.4rem;
@@ -60,7 +62,7 @@ header {
 }
 .fa-solid {
     
-    font-size: x-large;
+    font-size: xx-large;
 }
 .menuIcon {
     display: flex;
@@ -73,33 +75,54 @@ header {
     display: flex;
     justify-content: space-evenly;
 }
-.intro h2 {
+.box h2 {
     width: 60%; 
-    text-align: center;
 }
-.intro {
+.box {
     width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.intro h2 {
-    word-wrap: normal;
-}
-.headshot {
-    
-} 
 .headshot > img {
     height: 200px;
 }
-main {
-    height: 40rem;
+.preview {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
 }
-main h2 {
-    text-align: center;
+.preview a,
+.preview article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.preview img {
+    width: 70%;
 }
 .about {
     min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about p {
+    width: 65%;
+}
+.formEntry {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+.formName, .formEmail, .formMessage, div.sendButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 footer {
     width: 100%;
