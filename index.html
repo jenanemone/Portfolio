@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400&family=Diplomata&family=Splash&family=Trochut:ital@0;1&family=Ubuntu:wght@300;400&family=Zen+Loop&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/29e61423df.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/normalize.css">
@@ -15,12 +18,15 @@
 <body>
     <header>
         <nav>
-            <span class="menuIcon"><i class="fa-solid fa-code"></i></span>
+            <span class="menuIcon"><a href="index.html"><i class="fa-solid fa-code"></i></a></span>
+            <p class="navMessage">Let's do better by doing it together.</p>
             <span class="topLinks">
-                <span>Portfolio</span>
-                <span>About</span>
-                <span>Resume</span>
-                <span>Contact</span>
+                <span><a target="_blank" href="https://www.twitter.com/jenanemone"><i
+                            class="fa-brands fa-twitter-square"></i></a></span>
+                <span><a target="_blank" href="https://github.com/jenanemone"><i class="fa-brands fa-github-alt"></i></a></span>
+                <span><a target="_blank" href="https://www.linkedin.com/in/jennifer-allen-jenanemone/"><i
+                            class="fa-brands fa-linkedin"></i></a></span>
+                <span><a target="_blank" href="https://angel.co/u/jennie-allen-1"><i class="fa-brands fa-angellist"></i></a></span>
             </span>
         </nav>
     </header>
@@ -28,37 +34,46 @@
         <article class="box lifted">
             <h1>Hi! I'm Jennie Allen</h1>
             <h2>Web Developer</h2>
+            <h2>Software Engineer</h2>
             <h3>Your partner in building your business online</h3>
-
+            <p>&#128126;</p>
         </article>
         <article class="headshot">
             <img src="assets/Jennie-Allen-headshot-transparent-background.png" alt="Headshot of Jennie">
         </article>
     </section>
+    <!-- <section class="tv">
+        <div class="outerEdge">
+            <div class="innerEdge">
+                <canvas id="screen"></canvas>
+            </div>
+        </div>
+    </section> -->
     <main>
         <h2>Preview my Portfolio</h2>
         <section class="preview">
 
-            <article><a href="#"></a><img src="assets/drinkAndMealSmol.png" alt="Preview of Drink and a Meal"></a>
+            <article><a target="_blank" href="jennies-drink-and-a-meal.netlify.app"></a><img src="assets/drinkAndAMeal.png"
+                    alt="Preview of Drink and a Meal"></a>
             </article>
-
-            <article><a href="#"></a><img src="assets/NASA-pic-of-day-darkMode-resize.png"
-                    alt="Preview of NASA Pic of the Day">
+            <article><a target="_blank" href="https://too-cool-music-school.netlify.app"><img
+                        src="assets/tooCoolMusicSchool.png" alt="Preview Too Cool Music School"></a>
+            </article>
+            <article><a target="_blank" href="https://jennies-nasa-image-of-the-day.netlify.app/"></a><img
+                    src="assets/NASA-pic-of-day-darkMode-resize.png" alt="Preview of NASA Pic of the Day">
                 </a></article>
+            <article><a target="_blank" href="https://a-silly-game-of-war.netlify.app/"><img src="assets/war-solitaire.png"
+                        alt="Preview of war solitaire game"></a></article>
+            <article><a target="_blank" href=https://leef.s1.48in48.org/#"><img src="assets/Leef-Preview.png"
+                        alt="Preview of Little Engineers Education Foundation"></a></article>
 
-            <article><a href="#"><img src="assets/Hiar-Salon-Mockup-by-Jennie-Allen.png"
+            <article><a target="_blank" href="https://tic-tac-toe-by-jennieallen.netlify.app/"><img src="assets/Tic-Tac-ToebyJennie.png"
+                        alt="Preview of Tic-Tac-Toe"></a></article>
+            <article><a target="_blank" href="#"><img src="assets/Hiar-Salon-Mockup-by-Jennie-Allen.png"
                         alt="Preview Hair Salon Mockup"></a></article>
-            <article><a href="#"><img src="assets/Hiar-Salon-Mockup-by-Jennie-Allen.png"
+            <article><a target="_blank" href="#"><img src="assets/Hiar-Salon-Mockup-by-Jennie-Allen.png"
                         alt="Preview Hair Salon Mockup"></a></article>
-            <article><a href="#"><img src="assets/Hiar-Salon-Mockup-by-Jennie-Allen.png"
-                        alt="Preview Hair Salon Mockup"></a></article>
-            <article><a href="#"><img src="assets/Hiar-Salon-Mockup-by-Jennie-Allen.png"
-                        alt="Preview Hair Salon Mockup"></a></article>
-            <article><a href="#"><img src="assets/Hiar-Salon-Mockup-by-Jennie-Allen.png"
-                        alt="Preview Hair Salon Mockup"></a></article>
-            <article><a href="#"><img src="assets/Hiar-Salon-Mockup-by-Jennie-Allen.png"
-                        alt="Preview Hair Salon Mockup"></a></article>
-            <article><a href="#"><img src="assets/Hiar-Salon-Mockup-by-Jennie-Allen.png"
+            <article><a target="_blank" href="#"><img src="assets/Hiar-Salon-Mockup-by-Jennie-Allen.png"
                         alt="Preview Hair Salon Mockup"></a>
             </article>
 
@@ -69,16 +84,31 @@
     </section>
     <section class="about">
         <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, voluptas ad? Dolorem libero obcaecati, voluptatem deleniti ipsa a animi assumenda cupiditate reiciendis, ex facilis excepturi sed ab totam! Accusamus, itaque.
-        Ad, reprehenderit. Totam libero dolorum corporis laborum adipisci consectetur eum ipsa, blanditiis quasi distinctio officiis nulla beatae, recusandae molestiae alias ea! Minus deserunt sint voluptatum, reprehenderit recusandae quisquam ut provident.
-        Eligendi sequi nulla quia hic consequuntur quas nemo et quae laborum quis! Quasi enim qui explicabo dolor fuga eos ipsum ipsa consequuntur architecto omnis vero, sunt, quos aspernatur reprehenderit beatae?
-        Ipsum, eum, quos temporibus vel, quasi soluta totam veritatis esse fugit repudiandae voluptatibus laudantium minima corrupti. Enim possimus accusantium nisi dolores cupiditate dolorem, corporis ad ab, animi amet ullam nobis.
-        Ipsa dicta aliquid tempora commodi. Accusamus quaerat debitis, asperiores dicta esse temporibus voluptatem nobis impedit recusandae porro mollitia magni architecto sunt aliquam ea, odit laudantium doloremque? Itaque, ad? Delectus, commodi!</p>
+        <p>When I was younger, I wanted to know everything about almost everything, and I wanted to understand every
+            person who came into my life. With time and experience, I've managed to hone down my attention, and while
+            I'm looking for ways to continue growing and learning, I realize that time and intention are limiting
+            factors. This sort of unfettered curiosity has grown into a humanist urge to guide the world to a better
+            status quo, but my interest in coding and making things has brought me to the point where today I'm building
+            the world a little better, one webpage at a time. I've found what I love the most: coding. Coding gives me
+            the tools to make the world a little more manageable, a bit more equitable, and a lot more friendly. </p>
+        <p>It's true that I took a break from coding to run a wholesale and eCommerce reuse and recycle business. My
+            biggest takeway from that experience has been to realize that completion trumps perfection, every time.
+            Right now I'm building and coding, and providing consultation services. I'm still as committed as ever to
+            learning, in whatever form it comes, and I hope I can help someone else on their journey, as well. The axiom
+            seems truer all the time: the more you know, the more you realize you don't know.</p>
+        <p>I'd love to grow my career with you, especially if you're committed to what you're doing, if you value people
+            as the cause of and the purpose of your success, if you love to foster growth, and if you're looking to make
+            the world a brighter place. If you're looking for someone to take ownership of your work or their role in
+            your project, then let's talk further.</p>
+
+        <div class="techIcons">
+
+        </div>
+
     </section>
-    <section class="contact">
+    <!-- <section class="contact">
         <form name="contact" method="POST" data-netlify="true">
             <div class="formEntry">
-                <!-- <div class="formLeft"> -->
                     <div class="formName">
                         <label><i class="fa-solid fa-pen"></i> Your Name: <input type="text" name="name" /></label>
                     </div>
@@ -86,8 +116,7 @@
                     <div class="formEmail">
                         <label><i class="fa-solid fa-at"></i>Your Email: <input type="email" name="email" /></label>
                     </div>
-                <!-- </div> -->
-                <!-- <div class="formRight"> -->
+                </div>
 
                     <div class="formMessage">
                         <label> <i class="fa-solid fa-note-sticky"></i> Message: <textarea
@@ -96,12 +125,9 @@
                     </div>
                     <div class="sendButton"><button class="contactButton" type="submit">Send <i
                                 class="fa-solid fa-paper-plane"></i></button></div>
-                <!-- </div> -->
             </div>
-
-
         </form>
-    </section>
+    </section> -->
     <footer>
         <p>&#169; Jennifer Allen 2022</p>
     </footer>

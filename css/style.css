@@ -19,7 +19,8 @@ html {
 }
 body {
     height: 100%;
-    color: magenta;
+    width: 100%;
+    color: #9BFA4E;
 }
 h1 {
     font-size: 2.2rem;
@@ -39,14 +40,20 @@ body * {
     line-height: 2rem;
     font-family: 'Exo',Verdana, Geneva, Tahoma, sans-serif;
     outline:rgb(148, 149, 151) solid 2px;
-    background-color: #244484;
+    /* background-color: #244484; */
+    background-color: black;
 }
 nav {
     width: 100%;
     height: auto;
-    padding: 1% 0;
+    padding: 1%;
     display: flex;
     justify-content: space-between;
+}
+@media (max-width: 768px) {
+    .navMessage {
+        display: none;
+    }
 }
 header {
     height: auto;
@@ -60,9 +67,20 @@ header {
 .topLinks * {
     
 }
-.fa-solid {
-    
+.fa-solid, 
+.fa-brands,
+.hero h3 + p {	
+    color: #9BFA4E;
     font-size: xx-large;
+}
+.headshot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headshot img {
+    border-radius: 40%;
+    height: 200px;
 }
 .menuIcon {
     display: flex;
@@ -70,6 +88,7 @@ header {
     justify-content: center;
     align-items: center;
 }
+
 .hero {
     height: auto;
     display: flex;
@@ -83,9 +102,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.headshot > img {
-    height: 200px;
 }
 .preview {
     display: grid;
@@ -124,7 +140,33 @@ header {
     justify-content: center;
     align-items: center;
 }
+button {
+    color: yellowgreen;
+}
 footer {
     width: 100%;
     height: auto;
 }
+.tv {
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    /* background-image: */
+		/* radial-gradient(1em 1em at 22% 19%,#fff 25%,#fff0),
+		radial-gradient(4em 1.5em at 35% 17%,#fff 35%,#fff0),
+		radial-gradient(1em 1em at 82% 24%,#fff 25%,#fff0),
+		radial-gradient(100% 175% at 50% 50%,#0000 32%,#000 60%),
+		radial-gradient(175% 100% at 50% 53%,#0000 32%,#000 60%); */
+    /* background-image: repeating-radial-gradient(circle at 17% 32%, white, black 0.00085px); */
+    animation: tv-static 5s linear infinite;
+  }
+  
+  @keyframes tv-static {
+    from {
+      background-size: 100% 100%;
+    }
+  
+    to {
+      background-size: 200% 200%;
+    }
+  }
