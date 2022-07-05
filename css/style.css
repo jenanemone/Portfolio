@@ -56,6 +56,9 @@ body {
 .inner {
     padding-left: 20px;
     padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
@@ -89,9 +92,10 @@ body * {
 }
 
 nav {
-    width: 100%;
+    width: 80vw;
     height: 50px;
     padding-top: 20px;
+    padding-left: 20px;
     display: flex;
     justify-content: space-between;
 }
@@ -129,7 +133,7 @@ header {
 .fa-solid,
 .fa-brands {
     color: var(--green);
-    font-size: x-large;
+    font-size: large;
 }
 
 .headshot {
@@ -217,11 +221,11 @@ main h2 {
 }
 
 .about p {
-    width: 240px;
+    width: 220px;
     text-indent: 2ch;
     font-size: var(--12px);
-    line-height: 1.8ch;
-    padding: 10px 0;
+    line-height: 2ch;
+    padding: 10px 20px;
 }
 
 .formEntry {
@@ -344,4 +348,6 @@ footer p {
         animation: none;
     }
   }
+@media all and (min-width: 360px) {
 
+}
