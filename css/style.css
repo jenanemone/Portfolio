@@ -154,6 +154,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .box>h2 {
@@ -161,7 +162,7 @@ header {
 }
 
 .box>h2+h2 {
-    font-family: "Splash", Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Satisfy", Verdana, Geneva, Tahoma, sans-serif;
     line-height: var(--19p5px);
     padding-bottom: var(--10px);
 }
@@ -180,7 +181,7 @@ header {
 main h2 {
     font-size: var(--18px);
     text-align: center;
-    font-family: "Splash", 'Times New Roman', Times, serif;
+    font-family: "Satisfy", 'Times New Roman', Times, serif;
     padding: 10px 0;
 }
 
@@ -212,7 +213,7 @@ main h2 {
 
 .about h2 {
     padding: 10px;
-    font-family: "Splash", Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Satisfy", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .about p {
@@ -250,7 +251,7 @@ footer {
 
 footer p {
     text-align: center;
-    font-family: "Splash", Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Satisfy", Verdana, Geneva, Tahoma, sans-serif;
     font-size: var(--12px);
     letter-spacing: .12ch;
     padding: 20px;
@@ -343,3 +344,4 @@ footer p {
         animation: none;
     }
   }
+
