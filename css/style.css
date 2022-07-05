@@ -84,7 +84,7 @@ h3 {
 
 body * {
     font-family: 'Exo', Verdana, Geneva, Tahoma, sans-serif;
-    outline: rgb(148, 149, 151) solid 2px;
+    /* outline: rgb(148, 149, 151) solid 2px; */
     background-color: var(--black);
 }
 
@@ -179,7 +179,7 @@ header {
 
 main h2 {
     font-size: var(--18px);
-    text-align: left;
+    text-align: center;
     font-family: "Splash", 'Times New Roman', Times, serif;
     padding: 10px 0;
 }
