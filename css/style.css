@@ -6,7 +6,7 @@
 
 /* Box Model Hack */
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /******************************************
@@ -14,21 +14,20 @@
 /*******************************************/
 html {
     font-size: inherit;
-    color: rgb(32,40,55);
-    height:100%;
-    
+    --black: #000000;
+    --green: rgb(55, 224, 83);
     --3p75px: 0.2343rem;
     --9p6px: 0.6rem;
     --9p72px: 0.6075rem;
     --10px: 0.625rem;
     --10p6px: 0.66625rem;
     --10p8px: 0.675rem;
-    --11p88px: 0.7425rem; 
+    --11p88px: 0.7425rem;
     --12px: 0.75rem;
     --12p5px: 0.78125rem;
     --13px: 0.8125rem;
     --13p33px: 0.8331rem;
-    --14p66px: 0.9162rem;
+    --14p66px: 0.9162r --16px: 1rem;
     --15px: 0.9375rem;
     --16p66: 1.041rem;
     --17p33px: 1.08rem;
@@ -47,36 +46,50 @@ html {
     --56px: 3.5rem;
     --69px: 4.31rem;
 }
+
 body {
     height: 100%;
     width: 100%;
-    color: #9BFA4E;
+    color: var(--green);
 }
+
 .inner {
     padding-left: 20px;
     padding-right: 20px;
 }
+
 h1 {
-    font-size: 22px;
+    font-size: var(--21p66px);
     text-align: center;
+    letter-spacing: .12ch;
+    border-bottom: var(--green) 4px solid;
+    padding: 0 var(--13p33px);
+    font-weight: 600;
 }
+
 h2 {
-    font-size: 1.6rem;
-    padding: 1% 0;
+    font-size: var(--19p5px);
+    font-weight: 500;
+    padding: 2px 0;
+    letter-spacing: .12ch;
     text-align: center;
 }
+
 h3 {
-    font-size: 1rem;
-    padding: 1% 9%;
+    font-size: var(--16px);
+    padding: 10px 50px;
     text-align: center;
+    line-height: var(--18px);
 }
+
 body * {
-    line-height: 2rem;
-    font-family: 'Exo',Verdana, Geneva, Tahoma, sans-serif;
-    outline:rgb(148, 149, 151) solid 2px;
-    /* background-color: #244484; */
-    background-color: black;
+    /* line-height: 2rem; */
+    font-family: 'Exo', Verdana, Geneva, Tahoma, sans-serif;
+    outline: rgb(148, 149, 151) solid 2px;
+    /* background-colovar(--black)4484; */
+    background-color: var(--black);
 }
+
 nav {
     width: 100%;
     height: 50px;
@@ -84,14 +97,17 @@ nav {
     display: flex;
     justify-content: space-between;
 }
+
 @media (max-width: 768px) {
     .navMessage {
         display: none;
     }
 }
+
 header {
     height: auto;
 }
+
 .topLinks {
     width: 80%;
     margin: 0 5px;
@@ -99,21 +115,24 @@ header {
     justify-content: space-evenly;
     align-items: center;
 }
-.fa-solid, 
-.fa-brands,
-.hero h3 + p {	
-    color: #9BFA4E;
-    font-size: large;
+
+.fa-solid,
+.fa-brands {
+    color: var(--green);
+    font-size: x-large;
 }
+
 .headshot {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .headshot img {
     border-radius: 40%;
     height: 120px;
 }
+
 .menuIcon {
     display: flex;
     width: 10%;
@@ -126,15 +145,34 @@ header {
     flex-direction: column;
     justify-content: space-evenly;
 }
-.box h2 {
-    width: 224px; 
+
+.box>h2 {
+    padding-bottom: 0;
 }
+
+.box>h2+h2 {
+    font-family: "Splash", Verdana, Geneva, Tahoma, sans-serif;
+    line-height: var(--19p5px);
+    padding-bottom: var(--10px);
+}
+
+.box h2 {
+    width: 224px;
+}
+
 .box {
-    width: 280px; 
+    width: 280px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+main h2 {
+    font-size: var(--18px);
+    text-align: left;
+    font-family: "Splash", 'Times New Roman', Times, serif;
+}
+
 .preview {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -142,24 +180,36 @@ header {
     grid-column-gap: 5px;
     grid-row-gap: 5px;
 }
+
 .preview a,
 .preview article {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .preview img {
     width: 70%;
 }
+
 .about {
     min-height: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.about p {
-    width: 65%;
+
+.about h2 {
+    font-family: "Splash", Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.about p {
+    width: 200px;
+    text-indent: 2ch;
+    font-size: var(--12px);
+    line-height: 1.8ch;
+}
+
 .formEntry {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -167,38 +217,82 @@ header {
     grid-column-gap: 5px;
     grid-row-gap: 5px;
 }
-.formName, .formEmail, .formMessage, div.sendButton {
+
+.formName,
+.formEmail,
+.formMessage,
+div.sendButton {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 button {
     color: yellowgreen;
 }
+
 footer {
     width: 100%;
-    height: auto;
 }
+
+footer p {
+    text-align: center;
+    font-family: "Splash", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: var(--12px);
+    letter-spacing: .12ch;
+    padding: 20px;
+}
+
 .tv {
     width: 500px;
     height: 300px;
     margin: auto;
     /* background-image: */
-		/* radial-gradient(1em 1em at 22% 19%,#fff 25%,#fff0),
+    /* radial-gradient(1em 1em at 22% 19%,#fff 25%,#fff0),
 		radial-gradient(4em 1.5em at 35% 17%,#fff 35%,#fff0),
 		radial-gradient(1em 1em at 82% 24%,#fff 25%,#fff0),
 		radial-gradient(100% 175% at 50% 50%,#0000 32%,#000 60%),
 		radial-gradient(175% 100% at 50% 53%,#0000 32%,#000 60%); */
     /* background-image: repeating-radial-gradient(circle at 17% 32%, white, black 0.00085px); */
     animation: tv-static 5s linear infinite;
-  }
-  
-  @keyframes tv-static {
+}
+
+@keyframes tv-static {
     from {
-      background-size: 100% 100%;
+        background-size: 100% 100%;
     }
-  
+
     to {
-      background-size: 200% 200%;
+        background-size: 200% 200%;
+    }
+}
+
+.neonText {
+    animation: flicker 1.5s infinite alternate; 
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+}
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+      text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #0fa,
+        0 0 80px #0fa,
+        0 0 90px #0fa,
+        0 0 100px #0fa,
+        0 0 150px #0fa;
+    }
+    20%, 24%, 55% {       
+      text-shadow: none;
     }
   }
