@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tv test</title>
+</head>
+<body>
+    <main>
+        <div class="tv-body">
+            <div class="screen-container">
+                <canvas id="static" width="380" height="280"></canvas>
+                <img id="displayed" src="" alt="Nothing" width="380" height="280">
+                <div class="screen">
+                    <div class="screen-frame"></div>
+                    <div class="screen-inset"></div>
+                </div>
+            </div>
+            <div class="logo-badge">
+                <div class="logo-text">Bush</div>
+            </div>
+            <div class="controls">
+                <div class="panel">
+                    <div class="screw"></div>
+                    <div class="dial">
+                        <button id="channel" class="dial-label pristine">Channel</button>
+                    </div>
+                </div>
+                <div class="vents">
+                    <div class="vent"></div>
+                    <div class="vent"></div>
+                    <div class="vent"></div>
+                    <div class="vent"></div>
+                    <div class="vent"></div>
+                    <div class="vent"></div>
+                </div>
+                <div class="panel">
+                    <div class="screw"></div>
+                    <div class="dial">
+                        <button class="dial-label" disabled>Volume</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="legs">
+            <div class="leg"></div>
+            <div class="leg"></div>
+        </div>
+    </main>
+    <script type="text/javascript" src="main.js"></script>  
+</body>
+</html>
