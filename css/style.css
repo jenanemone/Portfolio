@@ -65,7 +65,6 @@ h1 {
     font-size: var(--21p66px);
     text-align: center;
     letter-spacing: .12ch;
-    /* border-bottom: var(--green) 4px solid; */
     padding: 0 var(--13p33px);
     font-weight: 600;
 }
@@ -87,7 +86,6 @@ h3 {
 
 body * {
     font-family: 'Exo', Verdana, Geneva, Tahoma, sans-serif;
-    /* outline: rgb(148, 149, 151) solid 2px; */
     background-color: var(--black);
 }
 
@@ -349,5 +347,84 @@ footer p {
     }
   }
 @media all and (min-width: 360px) {
-
+    nav a {
+        font-size: x-large;
+    }
+    h1 {
+        font-size: var(--26p66px);
+    }
+    h2 {
+        font-size: var(--23p33px);
+    }
+    main h2 {
+        font-size: var(--23p33px);
+    }
+    h3 {
+        font-size: var(--19p5px);
+        padding: 10px 30px;
+    }
+    .fa-solid,
+    .fa-brands {
+        color: var(--green);
+        font-size: x-large;
+    }
+    .about p {
+        width: 220px;
+        text-indent: 2ch;
+        font-size: var(--14p66px);
+        line-height: 2ch;
+        padding: 10px 10px;
+    }
+    footer p {
+        font-size: var(--16px);
+    }
+}
+@media all and (min-width: 500px) {
+    nav {
+        height: 80px;
+        /* padding-left: 20px;
+        padding-right: 20px; */
+        margin: 0;
+    }
+    .topLinks span i {
+        font-size: var(--36px);
+        padding: 0;
+    }
+    nav .fa-code {
+        font-size: var(--43p33px);
+    }
+    h1 {
+        font-size: var(--30px);
+        padding-top: 30px;
+    }
+    h2 {
+        font-size: var(--26p66px);
+        padding: 20px 0;
+    }
+    main h2 {
+        font-size: var(--26p66px);
+        padding-top: 30px;
+    }
+    h3 {
+        font-size: var(--23p33px);
+        padding: 10px 30px;
+        width: 360px;
+        line-height: 1.8ch;
+        padding: 30px 0 0 0;
+    }
+    .fa-solid,
+    .fa-brands {
+        color: var(--green);
+        font-size: x-large;
+    }
+    .about p {
+        width: 400px;
+        text-indent: 2ch;
+        font-size: var(--14p66px);
+        line-height: 2ch;
+        padding: 10px 20px;
+    }
+    footer p {
+        font-size: var(--20px);
+    }
 }
