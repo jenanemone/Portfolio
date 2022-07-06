@@ -623,6 +623,18 @@ footer p {
     nav .fa-code {
         font-size: var(--43p33px);
     }
+    .neonBar {
+        width: 280px;
+        height: 8px;
+    }
+    .headshot {
+        margin-top: 50px;
+    }
+    .hero img {
+        height: 200px;
+        padding-top: 0;
+        margin-top: 50px;
+    }
     .about {
         padding-top: 40px;
     }
