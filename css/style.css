@@ -110,12 +110,6 @@ nav {
     background: radial-gradient(#fff, var(--green));
 }
 
-@media (max-width: 768px) {
-    .navMessage {
-        display: none;
-    }
-}
-
 header {
     height: auto;
 }
@@ -157,6 +151,7 @@ header {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    width: 100%;
 }
 
 .box>h2 {
@@ -168,11 +163,6 @@ header {
     line-height: var(--19p5px);
     padding-bottom: var(--10px);
 }
-
-.box h2 {
-    width: 224px;
-}
-
 .box {
     width: 280px;
     display: flex;
@@ -225,28 +215,18 @@ main h2 {
     line-height: 2ch;
     padding: 10px 20px;
 }
-
-.formEntry {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
-}
-
-.formName,
-.formEmail,
-.formMessage,
-div.sendButton {
+.techIcons {
+    padding: 30px 0;
+    width: 80vw;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
 }
-
-button {
-    color: yellowgreen;
+.techIcons img {
+    height: 36px;
 }
-
 footer {
     width: 100%;
 }
@@ -401,7 +381,7 @@ footer p {
     }
     h2 {
         font-size: var(--26p66px);
-        padding: 20px 0;
+        padding: 20px 20px;
     }
     main h2 {
         font-size: var(--26p66px);
@@ -410,9 +390,8 @@ footer p {
     h3 {
         font-size: var(--23p33px);
         padding: 10px 30px;
-        width: 360px;
+        width: 340px;
         line-height: 1.8ch;
-        padding: 30px 0 0 0;
     }
     .fa-solid,
     .fa-brands {
@@ -548,6 +527,7 @@ footer p {
     h2 {
         font-size: var(--26p66px);
         padding: 20px 0;
+        margin: 0;
     }
     main h2 {
         font-size: var(--26p66px);
@@ -607,9 +587,9 @@ footer p {
     h3 {
         font-size: var(--23p33px);
         padding: 10px 30px;
-        width: 460px;
+        width: 600px;
         line-height: 1.8ch;
-        padding: 30px 0 0 0;
+        padding: 30px 50px;
     }
     .fa-solid,
     .fa-brands {
@@ -629,7 +609,7 @@ footer p {
 }
 @media all and (min-width: 760px) {
     nav {
-        height: 80px;
+        height: 100px;
         margin: 0;
     }
     .topLinks span i {
@@ -639,42 +619,27 @@ footer p {
     nav .fa-code {
         font-size: var(--43p33px);
     }
-    h1 {
-        font-size: var(--36px);
-        padding-top: 30px;
-        letter-spacing: .3ch;
-    }
-    .box, .hero, main {
-        width: auto;
-        height: auto;
-    }
     .about {
         padding-top: 40px;
     }
+    .box {
+        width: 650px;
+    }
+    h1 {
+        font-size: var(--43p33px);
+        padding-top: 30px;
+        letter-spacing: .3ch;
+    }
     h2 {
-        width: 600px;
-        /* height: 80px; */
         font-size: var(--30px);
         padding: 20px 0;
-        letter-spacing: .12ch;
-        
-    }
-    .headshot {
-        height: 220px;
-        width: auto;
-    }
-    .headshot img {
-        height: 220px;
     }
     main h2 {
-        width: 600px;
-        /* height: 50px; */
-        /* line-height: var(--30px); */
         font-size: var(--30px);
-        padding-top: 30px;   
+        padding-top: 30px;
     }
     h3 {
-        font-size: var(--25px);
+        font-size: var(--26p66px);
         padding: 10px 30px;
         width: 600px;
         line-height: 1.8ch;
@@ -683,16 +648,21 @@ footer p {
     .fa-solid,
     .fa-brands {
         color: var(--green);
-        font-size: x-large;
+        font-size: xx-large;
     }
     .about p {
-        width: 600px;
+        width: 680px;
         text-indent: 2ch;
-        font-size: var(--16px);
+        font-size: var(--17p33px);
         line-height: 2ch;
-        padding: 10px 20px;
+        padding: 10px 40px;
     }
     footer p {
         font-size: var(--20px);
+    }
+}
+@media (max-width: 940px) {
+    .navMessage {
+        display: none;
     }
 }
