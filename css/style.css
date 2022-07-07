@@ -346,6 +346,10 @@ footer p {
         animation: none;
     }
   }
+
+/***************************************
+*********** MEDIA QUERIES **************
+***************************************/
 @media all and (min-width: 360px) {
     nav a {
         font-size: x-large;
@@ -382,8 +386,6 @@ footer p {
 @media all and (min-width: 450px) {
     nav {
         height: 80px;
-        /* padding-left: 20px;
-        padding-right: 20px; */
         margin: 0;
     }
     .topLinks span i {
@@ -431,8 +433,6 @@ footer p {
 @media all and (min-width: 500px) {
     nav {
         height: 80px;
-        /* padding-left: 20px;
-        padding-right: 20px; */
         margin: 0;
     }
     .topLinks span i {
@@ -480,8 +480,6 @@ footer p {
 @media all and (min-width: 540px) {
     nav {
         height: 80px;
-        /* padding-left: 20px;
-        padding-right: 20px; */
         margin: 0;
     }
     .topLinks span i {
@@ -491,9 +489,14 @@ footer p {
     nav .fa-code {
         font-size: var(--43p33px);
     }
+    .barOuter {
+        height: 8px;
+        padding-bottom: 30px;
+    }
     h1 {
-        font-size: var(--30px);
+        font-size: var(--36px);
         padding-top: 30px;
+
     }
     h2 {
         font-size: var(--26p66px);
@@ -521,6 +524,173 @@ footer p {
         font-size: var(--14p66px);
         line-height: 2ch;
         padding: 10px 2vw;
+    }
+    footer p {
+        font-size: var(--20px);
+    }
+}
+@media all and (min-width: 600px) {
+    nav {
+        height: 80px;
+        margin: 0;
+    }
+    .topLinks span i {
+        font-size: var(--36px);
+        padding: 0;
+    }
+    nav .fa-code {
+        font-size: var(--43p33px);
+    }
+    h1 {
+        font-size: var(--36px);
+        padding-top: 30px;
+    }
+    h2 {
+        font-size: var(--26p66px);
+        padding: 20px 0;
+    }
+    main h2 {
+        font-size: var(--26p66px);
+        padding-top: 30px;
+    }
+    h3 {
+        font-size: var(--23p33px);
+        padding: 10px 30px;
+        width: 460px;
+        line-height: 1.8ch;
+        padding: 30px 0 0 0;
+    }
+    .fa-solid,
+    .fa-brands {
+        color: var(--green);
+        font-size: x-large;
+    }
+    .about p {
+        width: 440px;
+        text-indent: 2ch;
+        font-size: var(--15px);
+        line-height: 2ch;
+        padding: 10px 20px;
+    }
+    footer p {
+        font-size: var(--20px);
+    }
+}
+@media all and (min-width: 660px) {
+    nav {
+        height: 80px;
+        margin: 0;
+    }
+    .topLinks span i {
+        font-size: var(--36px);
+        padding: 0;
+    }
+    nav .fa-code {
+        font-size: var(--43p33px);
+    }
+    .about {
+        padding-top: 40px;
+    }
+    h1 {
+        font-size: var(--36px);
+        padding-top: 30px;
+        letter-spacing: .3ch;
+    }
+    h2 {
+        font-size: var(--26p66px);
+        padding: 20px 0;
+    }
+    main h2 {
+        font-size: var(--26p66px);
+        padding-top: 30px;
+    }
+    h3 {
+        font-size: var(--23p33px);
+        padding: 10px 30px;
+        width: 460px;
+        line-height: 1.8ch;
+        padding: 30px 0 0 0;
+    }
+    .fa-solid,
+    .fa-brands {
+        color: var(--green);
+        font-size: x-large;
+    }
+    .about p {
+        width: 560px;
+        text-indent: 2ch;
+        font-size: var(--16px);
+        line-height: 2ch;
+        padding: 10px 20px;
+    }
+    footer p {
+        font-size: var(--20px);
+    }
+}
+@media all and (min-width: 760px) {
+    nav {
+        height: 80px;
+        margin: 0;
+    }
+    .topLinks span i {
+        font-size: var(--36px);
+        padding: 0;
+    }
+    nav .fa-code {
+        font-size: var(--43p33px);
+    }
+    h1 {
+        font-size: var(--36px);
+        padding-top: 30px;
+        letter-spacing: .3ch;
+    }
+    .box, .hero, main {
+        width: auto;
+        height: auto;
+    }
+    .about {
+        padding-top: 40px;
+    }
+    h2 {
+        width: 600px;
+        /* height: 80px; */
+        font-size: var(--30px);
+        padding: 20px 0;
+        letter-spacing: .12ch;
+        
+    }
+    .headshot {
+        height: 220px;
+        width: auto;
+    }
+    .headshot img {
+        height: 220px;
+    }
+    main h2 {
+        width: 600px;
+        /* height: 50px; */
+        /* line-height: var(--30px); */
+        font-size: var(--30px);
+        padding-top: 30px;   
+    }
+    h3 {
+        font-size: var(--25px);
+        padding: 10px 30px;
+        width: 600px;
+        line-height: 1.8ch;
+        padding: 30px 0 0 0;
+    }
+    .fa-solid,
+    .fa-brands {
+        color: var(--green);
+        font-size: x-large;
+    }
+    .about p {
+        width: 600px;
+        text-indent: 2ch;
+        font-size: var(--16px);
+        line-height: 2ch;
+        padding: 10px 20px;
     }
     footer p {
         font-size: var(--20px);
