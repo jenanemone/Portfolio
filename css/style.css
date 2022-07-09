@@ -224,9 +224,13 @@ main h2 {
     justify-content: space-evenly;
     align-items: center;
 }
+#vsCodeLogo {
+    height: 16px;
+}
 .techIcons img {
     height: 36px;
 }
+
 footer {
     width: 100%;
 }
