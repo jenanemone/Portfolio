@@ -1,0 +1,702 @@
+/*********************************
+**********CSS by Jennie***********
+**********DRAGONS AHEAD***********
+*******YE'VE BEEN WARNED!********/
+
+
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+    font-size: inherit;
+    --black: #000000;
+    --green: rgb(55, 224, 83);
+    --3p75px: 0.2343rem;
+    --9p6px: 0.6rem;
+    --9p72px: 0.6075rem;
+    --10px: 0.625rem;
+    --10p6px: 0.66625rem;
+    --10p8px: 0.675rem;
+    --11p88px: 0.7425rem;
+    --12px: 0.75rem;
+    --12p5px: 0.78125rem;
+    --13px: 0.8125rem;
+    --13p33px: 0.8331rem;
+    --14p66px: 0.9162r --16px: 1rem;
+    --15px: 0.9375rem;
+    --16p66: 1.041rem;
+    --17p33px: 1.08rem;
+    --18px: 1.125rem;
+    --19p5px: 1.21875rem;
+    --20px: 1.25rem;
+    --21p66px: 1.353rem;
+    --23p33px: 1.45rem;
+    --24px: 1.5rem;
+    --25px: 1.5625rem;
+    --26p66px: 1.66rem;
+    --30px: 1.875rem;
+    --36px: 2.25rem;
+    --43p33px: 2.7rem;
+    --46p66px: 2.91625rem;
+    --56px: 3.5rem;
+    --69px: 4.31rem;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    color: var(--green);
+}
+
+.inner {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: var(--21p66px);
+    text-align: center;
+    letter-spacing: .12ch;
+    padding: 0 var(--13p33px);
+    font-weight: 600;
+}
+
+h2 {
+    font-size: var(--19p5px);
+    font-weight: 500;
+    padding: 2px 0;
+    letter-spacing: .12ch;
+    text-align: center;
+}
+
+h3 {
+    font-size: var(--16px);
+    padding: 10px 50px;
+    text-align: center;
+    line-height: var(--18px);
+}
+
+body * {
+    font-family: 'Exo', Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--black);
+}
+
+nav {
+    width: 80vw;
+    height: 50px;
+    padding-top: 20px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.navMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.barOuter {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 20px;
+}
+.bar {
+    height: 4px;
+    width: 200px;
+    border-radius: 1rem;
+    background: radial-gradient(#fff, var(--green));
+}
+
+header {
+    height: auto;
+}
+
+.topLinks {
+    width: 80%;
+    margin: 0 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fa-solid,
+.fa-brands {
+    color: var(--green);
+    font-size: large;
+}
+
+.headshot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headshot img {
+    border-radius: 40%;
+    height: 120px;
+}
+
+.menuIcon {
+    display: flex;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.box>h2 {
+    padding-bottom: 0;
+}
+
+.box>h2+h2 {
+    font-family: "Satisfy", Verdana, Geneva, Tahoma, sans-serif;
+    line-height: var(--19p5px);
+    padding-bottom: var(--10px);
+}
+.box {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h2 {
+    font-size: var(--18px);
+    text-align: center;
+    font-family: "Satisfy", Verdana, 'Times New Roman', Times, serif;
+    padding: 10px 0;
+}
+
+.preview {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.preview a,
+.preview section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview img {
+    width: 70%;
+}
+
+.about {
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about h2 {
+    padding: 10px;
+    font-family: "Satisfy", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.about p {
+    width: 220px;
+    text-indent: 2ch;
+    font-size: var(--12px);
+    line-height: 2ch;
+    padding: 10px 20px;
+}
+.techIcons {
+    padding: 30px 0;
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#vsCodeLogo {
+    height: 16px;
+}
+.techIcons img {
+    height: 36px;
+}
+
+footer {
+    width: 100%;
+}
+
+footer p {
+    text-align: center;
+    font-family: "Satisfy", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: var(--12px);
+    letter-spacing: .12ch;
+    padding: 20px;
+    color:rgb(209, 223, 213);
+}
+
+.tv {
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    /* background-image: */
+    /* radial-gradient(1em 1em at 22% 19%,#fff 25%,#fff0),
+		radial-gradient(4em 1.5em at 35% 17%,#fff 35%,#fff0),
+		radial-gradient(1em 1em at 82% 24%,#fff 25%,#fff0),
+		radial-gradient(100% 175% at 50% 50%,#0000 32%,#000 60%),
+		radial-gradient(175% 100% at 50% 53%,#0000 32%,#000 60%); */
+    /* background-image: repeating-radial-gradient(circle at 17% 32%, white, black 0.00085px); */
+    animation: tv-static 5s linear infinite;
+}
+
+@keyframes tv-static {
+    from {
+        background-size: 100% 100%;
+    }
+
+    to {
+        background-size: 200% 200%;
+    }
+}
+.neonBar {
+    animation: flickerBar 1.5s infinite alternate; 
+    color: rgb(209, 223, 213);
+    box-shadow:
+        0 0 7px #fff,
+        0 0 10px rgb(133, 195, 153),
+        0 0 21px var(--green),
+        0 0 42px var(--green),
+        0 0 82px var(--green),
+        0 0 92px var(--green),
+        0 0 102px var(--green),
+        0 0 151px var(--green);
+}
+.neonText {
+    animation: flicker 1.5s infinite alternate; 
+    color: rgb(209, 223, 213);
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px rgb(133, 195, 153),
+        0 0 21px var(--green),
+        0 0 42px var(--green),
+        0 0 82px var(--green),
+        0 0 92px var(--green),
+        0 0 102px var(--green),
+        0 0 151px var(--green);
+}
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+      text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px rgb(133, 195, 153),
+        0 0 40px var(--green),
+        0 0 80px var(--green),
+        0 0 90px var(--green),
+        0 0 100px var(--green),
+        0 0 150px var(--green);
+    }
+    20%, 24%, 55% {       
+      text-shadow: none;
+    }
+  }
+@keyframes flickerBar {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        box-shadow:
+          0 0 4px #fff,
+          0 0 11px #fff,
+          0 0 19px rgb(133, 195, 153),
+          0 0 40px var(--green),
+          0 0 80px var(--green),
+          0 0 90px var(--green),
+          0 0 100px var(--green),
+          0 0 150px var(--green);
+      }
+      20%, 24%, 55% {       
+        box-shadow: none;
+      }
+}
+  @media screen and (prefers-reduced-motion) {
+    .neonText {
+        animation: none;
+    }
+  }
+
+/***************************************
+*********** MEDIA QUERIES **************
+***************************************/
+@media all and (min-width: 360px) {
+    nav a {
+        font-size: x-large;
+    }
+    h1 {
+        font-size: var(--26p66px);
+    }
+    h2 {
+        font-size: var(--23p33px);
+    }
+    main h2 {
+        font-size: var(--23p33px);
+    }
+    h3 {
+        font-size: var(--19p5px);
+        padding: 10px 30px;
+    }
+    .fa-solid,
+    .fa-brands {
+        color: var(--green);
+        font-size: x-large;
+    }
+    .about p {
+        width: 280px;
+        text-indent: 2ch;
+        font-size: var(--14p66px);
+        line-height: 2ch;
+        padding: 10px 10px;
+    }
+    footer p {
+        font-size: var(--16px);
+    }
+}
+@media all and (min-width: 450px) {
+    nav {
+        height: 80px;
+        margin: 0;
+    }
+    .topLinks span i {
+        font-size: var(--36px);
+        padding: 0;
+    }
+    nav .fa-code {
+        font-size: var(--43p33px);
+    }
+    h1 {
+        font-size: var(--30px);
+        padding-top: 30px;
+    }
+    h2 {
+        font-size: var(--26p66px);
+        padding: 20px 20px;
+    }
+    main h2 {
+        font-size: var(--26p66px);
+        padding-top: 30px;
+    }
+    h3 {
+        font-size: var(--23p33px);
+        padding: 10px 30px;
+        width: 340px;
+        line-height: 1.8ch;
+    }
+    .fa-solid,
+    .fa-brands {
+        color: var(--green);
+        font-size: x-large;
+    }
+    .about p {
+        width: 400px;
+        text-indent: 2ch;
+        font-size: var(--14p66px);
+        line-height: 2ch;
+        padding: 10px 8vw;
+    }
+    footer p {
+        font-size: var(--20px);
+    }
+}
+@media all and (min-width: 500px) {
+    nav {
+        height: 80px;
+        margin: 0;
+    }
+    .topLinks span i {
+        font-size: var(--36px);
+        padding: 0;
+    }
+    nav .fa-code {
+        font-size: var(--43p33px);
+    }
+    h1 {
+        font-size: var(--30px);
+        padding-top: 30px;
+    }
+    h2 {
+        font-size: var(--26p66px);
+        padding: 20px 0;
+    }
+    main h2 {
+        font-size: var(--26p66px);
+        padding-top: 30px;
+    }
+    h3 {
+        font-size: var(--23p33px);
+        padding: 10px 30px;
+        width: 360px;
+        line-height: 2ch;
+        padding: 30px 0 0 0;
+    }
+    .fa-solid,
+    .fa-brands {
+        color: var(--green);
+        font-size: x-large;
+    }
+    .about p {
+        width: 400px;
+        text-indent: 2ch;
+        font-size: var(--14p66px);
+        line-height: 2.2ch;
+        padding: 10px 6vw;
+    }
+    footer p {
+        font-size: var(--20px);
+    }
+}
+@media all and (min-width: 540px) {
+    nav {
+        height: 80px;
+        margin: 0;
+    }
+    .topLinks span i {
+        font-size: var(--36px);
+        padding: 0;
+    }
+    nav .fa-code {
+        font-size: var(--43p33px);
+    }
+    .barOuter {
+        height: 8px;
+        padding-bottom: 30px;
+    }
+    h1 {
+        font-size: var(--36px);
+        padding-top: 30px;
+
+    }
+    h2 {
+        font-size: var(--26p66px);
+        padding: 20px 0;
+    }
+    main h2 {
+        font-size: var(--26p66px);
+        padding-top: 30px;
+    }
+    h3 {
+        font-size: var(--23p33px);
+        padding: 10px 30px;
+        width: 360px;
+        line-height: 1.8ch;
+        padding: 30px 0 0 0;
+    }
+    .fa-solid,
+    .fa-brands {
+        color: var(--green);
+        font-size: x-large;
+    }
+    .about p {
+        width: 400px;
+        text-indent: 2ch;
+        font-size: var(--14p66px);
+        line-height: 2ch;
+        padding: 10px 2vw;
+    }
+    footer p {
+        font-size: var(--20px);
+    }
+}
+@media all and (min-width: 600px) {
+    nav {
+        height: 80px;
+        margin: 0;
+    }
+    .topLinks span i {
+        font-size: var(--36px);
+        padding: 0;
+    }
+    nav .fa-code {
+        font-size: var(--43p33px);
+    }
+    h1 {
+        font-size: var(--36px);
+        padding-top: 30px;
+    }
+    h2 {
+        font-size: var(--26p66px);
+        padding: 20px 0;
+        margin: 0;
+    }
+    main h2 {
+        font-size: var(--26p66px);
+        padding-top: 30px;
+    }
+    h3 {
+        font-size: var(--23p33px);
+        padding: 10px 30px;
+        width: 460px;
+        line-height: 1.8ch;
+        padding: 30px 0 0 0;
+    }
+    .fa-solid,
+    .fa-brands {
+        color: var(--green);
+        font-size: x-large;
+    }
+    .about p {
+        width: 440px;
+        text-indent: 2ch;
+        font-size: var(--15px);
+        line-height: 2ch;
+        padding: 10px 20px;
+    }
+    footer p {
+        font-size: var(--20px);
+    }
+}
+@media all and (min-width: 660px) {
+    nav {
+        height: 80px;
+        margin: 0;
+    }
+    .topLinks span i {
+        font-size: var(--36px);
+        padding: 0;
+    }
+    nav .fa-code {
+        font-size: var(--43p33px);
+    }
+    .about {
+        padding-top: 40px;
+    }
+    h1 {
+        font-size: var(--36px);
+        padding-top: 30px;
+        letter-spacing: .3ch;
+    }
+    h2 {
+        font-size: var(--26p66px);
+        padding: 20px 0;
+    }
+    main h2 {
+        font-size: var(--26p66px);
+        padding-top: 30px;
+    }
+    h3 {
+        font-size: var(--23p33px);
+        padding: 10px 30px;
+        width: 600px;
+        line-height: 1.8ch;
+        padding: 30px 50px;
+    }
+    .fa-solid,
+    .fa-brands {
+        color: var(--green);
+        font-size: x-large;
+    }
+    .about p {
+        width: 560px;
+        text-indent: 2ch;
+        font-size: var(--16px);
+        line-height: 2ch;
+        padding: 10px 20px;
+    }
+    footer p {
+        font-size: var(--20px);
+    }
+}
+@media all and (min-width: 760px) {
+    nav {
+        height: 100px;
+        margin: 0;
+    }
+    .topLinks span i {
+        font-size: var(--36px);
+        padding: 0;
+    }
+    nav .fa-code {
+        font-size: var(--43p33px);
+    }
+    .neonBar {
+        width: 280px;
+        height: 8px;
+    }
+    .headshot {
+        margin-top: 50px;
+    }
+    .hero img {
+        height: 200px;
+        padding-top: 0;
+        margin-top: 50px;
+    }
+    .about {
+        padding-top: 40px;
+    }
+    .box {
+        width: 650px;
+    }
+    h1 {
+        font-size: var(--43p33px);
+        padding-top: 30px;
+        letter-spacing: .3ch;
+    }
+    h2 {
+        font-size: var(--30px);
+        padding: 20px 0;
+    }
+    main h2 {
+        font-size: var(--30px);
+        padding-top: 30px;
+    }
+    h3 {
+        font-size: var(--26p66px);
+        padding: 10px 30px;
+        width: 600px;
+        line-height: 1.8ch;
+        padding: 30px 0 0 0;
+    }
+    .fa-solid,
+    .fa-brands {
+        color: var(--green);
+        font-size: xx-large;
+    }
+    .about p {
+        width: 680px;
+        text-indent: 2ch;
+        font-size: var(--17p33px);
+        line-height: 2ch;
+        padding: 10px 40px;
+    }
+    footer p {
+        font-size: var(--20px);
+    }
+}
+@media (max-width: 950px) {
+    .navMessage {
+        display: none;
+    }
+}
+@media (min-width: 950px) {
+    .nav {
+        width: 100%;
+    }
+    .fa-code {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .nav p {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
