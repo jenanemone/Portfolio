@@ -107,6 +107,7 @@ nav {
     align-items: flex-start;
     justify-content: center;
     height: 20px;
+    z-index: 1;
 }
 .bar {
     height: 4px;
@@ -142,6 +143,8 @@ header {
 .headshot img {
     border-radius: 40%;
     height: 120px;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 .menuIcon {
@@ -185,7 +188,7 @@ main h2 {
 .preview {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-rows: repeat(7, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
 }
@@ -198,7 +201,7 @@ main h2 {
 }
 
 .preview img {
-    width: 70%;
+    width: 50%;
 }
 
 .about {
@@ -216,7 +219,7 @@ main h2 {
 .about p {
     width: 220px;
     text-indent: 2ch;
-    font-size: var(--12px);
+    font-size: var(--18px);
     line-height: 2ch;
     padding: 10px 20px;
 }
@@ -248,7 +251,7 @@ footer p {
     padding: 20px;
     color:rgb(209, 223, 213);
 }
-
+/*
 .tv {
     width: 500px;
     height: 300px;
@@ -258,8 +261,8 @@ footer p {
 		radial-gradient(4em 1.5em at 35% 17%,#fff 35%,#fff0),
 		radial-gradient(1em 1em at 82% 24%,#fff 25%,#fff0),
 		radial-gradient(100% 175% at 50% 50%,#0000 32%,#000 60%),
-		radial-gradient(175% 100% at 50% 53%,#0000 32%,#000 60%); */
-    /* background-image: repeating-radial-gradient(circle at 17% 32%, white, black 0.00085px); */
+		radial-gradient(175% 100% at 50% 53%,#0000 32%,#000 60%); 
+    /* background-image: repeating-radial-gradient(circle at 17% 32%, white, black 0.00085px); 
     animation: tv-static 5s linear infinite;
 }
 
@@ -272,6 +275,7 @@ footer p {
         background-size: 200% 200%;
     }
 }
+*/
 .neonBar {
     animation: flickerBar 1.5s infinite alternate; 
     color: rgb(209, 223, 213);
@@ -351,6 +355,7 @@ footer p {
     }
     main h2 {
         font-size: var(--23p33px);
+        margin: 30px;
     }
     h3 {
         font-size: var(--19p5px);
@@ -479,7 +484,7 @@ footer p {
     }
     .barOuter {
         height: 8px;
-        padding-bottom: 30px;
+        padding-bottom: 50px;
     }
     h1 {
         font-size: var(--36px);
@@ -632,9 +637,9 @@ footer p {
         width: 280px;
         height: 8px;
     }
-    .headshot {
-        margin-top: 50px;
-    }
+    /*.headshot {
+        margin-top: 10px;
+    }*/
     .hero img {
         height: 200px;
         padding-top: 0;
